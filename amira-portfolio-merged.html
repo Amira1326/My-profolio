@@ -1,0 +1,2933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Alattas — Computer Science & AI</title>
+    <meta name="description" content="Amira Alattas — Computer Science graduate (AI Track) from Jazan University. Web development, AI/ML, data analysis, and UI/UX portfolio.">
+    <meta name="theme-color" content="#0D0D0F">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%238A41F5'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%238A41F5'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Amira%20Alattas%20Portfolio%22%2C%22short_name%22%3A%22Amira%22%2C%22start_url%22%3A%22.%2Findex.html%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%230D0D0F%22%2C%22theme_color%22%3A%22%230D0D0F%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%3D%2527http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%2527%2520viewBox%3D%25270%25200%2520100%2520100%2527%253E%253Crect%2520width%3D%2527100%2527%2520height%3D%2527100%2527%2520fill%3D%2527%25238A41F5%2527%2F%253E%253Ctext%2520x%3D%252750%2527%2520y%3D%252770%2527%2520font-size%3D%252758%2527%2520font-family%3D%2527Arial%2Csans-serif%2527%2520font-weight%3D%2527700%2527%2520fill%3D%2527white%2527%2520text-anchor%3D%2527middle%2527%253EA%253C%2Ftext%253E%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
+
+    <!-- Open Graph / social link previews (WhatsApp, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amira Alattas — Computer Science & AI">
+    <meta property="og:description" content="Computer Science graduate (AI Track, GPA 4.90/5.00) from Jazan University. Web development, AI/ML, data analysis, and UI/UX portfolio.">
+    <meta property="og:image" content="https://amira1326.github.io/My-profolio/Amira.jpg">
+    <meta property="og:url" content="https://amira1326.github.io/My-profolio/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amira Alattas — Computer Science & AI">
+    <meta name="twitter:description" content="Computer Science graduate (AI Track, GPA 4.90/5.00) from Jazan University. Web development, AI/ML, data analysis, and UI/UX portfolio.">
+    <meta name="twitter:image" content="https://amira1326.github.io/My-profolio/Amira.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+/*
+================================
+    GLOBAL STYLES & RESET
+================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #0D0D0F;
+    --secondary-bg-color: #1A1A1D;
+    --text-color: #E0E0E0;
+    --light-text-color: #B0B0B0;
+    --accent-color: #8A41F5;
+    --accent-dark: #6C2ED9;
+    --accent-light: #B484F7;
+    --box-shadow-color: rgba(138, 65, 245, 0.3);
+    --card-shadow-color: rgba(0, 0, 0, 0.4);
+    --gradient-start: #8A41F5;
+    --gradient-end: #6C2ED9;
+    --font-sans: 'Poppins', sans-serif;
+    --transition-speed: 0.4s;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    position: relative;
+}
+
+.heading {
+    font-size: 4.8rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--accent-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.header.scrolled {
+    padding: 1.5rem 9%;
+    background: rgba(13, 13, 15, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-size: 3.2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+    letter-spacing: 0.08rem;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.navbar a {
+    font-size: 1.65rem;
+    color: var(--text-color);
+    margin-left: 2.4rem;
+    transition: all var(--transition-speed) ease;
+    padding: 0.8rem 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: all var(--transition-speed) ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--accent-color);
+}
+
+#menu-icon {
+    font-size: 3.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+    transition: all var(--transition-speed) ease;
+}
+
+#menu-icon.bx-x {
+    color: var(--accent-color);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.home-content {
+    max-width: 85rem;
+    z-index: 1;
+}
+
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.home-content h1 span {
+    color: var(--accent-color);
+}
+
+.open-to-work {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    color: var(--accent-light);
+    background: rgba(138, 65, 245, 0.1);
+    border: 1px solid var(--accent-dark);
+    padding: 0.7rem 1.8rem;
+    border-radius: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.open-to-work .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #3DDC84;
+    animation: dotPulse 1.8s infinite;
+}
+
+@keyframes dotPulse {
+    0% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.6); }
+    70% { box-shadow: 0 0 0 8px rgba(61, 220, 132, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0); }
+}
+
+.home-content .text-animation {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin: 1.5rem 0 3.5rem;
+    min-height: 5rem;
+    color: var(--accent-light);
+    text-transform: capitalize;
+}
+
+.home-content p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    color: var(--light-text-color);
+    line-height: 1.8;
+    padding: 0 5rem;
+}
+
+.social-icons {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 0 0.8rem var(--box-shadow-color);
+}
+
+.social-icons a:hover {
+    background: var(--accent-color);
+    color: var(--secondary-bg-color);
+    box-shadow: 0 0 2rem var(--box-shadow-color), inset 0 0 1rem var(--accent-light);
+    transform: translateY(-0.5rem) scale(1.05);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.4rem 3.5rem;
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 4rem;
+    box-shadow: 0 0.8rem 2rem var(--box-shadow-color);
+    font-size: 1.7rem;
+    color: var(--bg-color);
+    letter-spacing: 0.12rem;
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--gradient-end), var(--gradient-start));
+    z-index: -1;
+    transition: transform var(--transition-speed) ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem) scale(1.02);
+    box-shadow: 0 1.2rem 2.5rem var(--box-shadow-color);
+    color: var(--text-color);
+}
+
+.btn-group .btn:nth-child(2) {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    box-shadow: none;
+    padding: 1.2rem 3.3rem;
+}
+
+.btn-group .btn:nth-child(2)::before {
+    background: var(--accent-color);
+}
+
+.btn-group .btn:nth-child(2):hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0.8rem 2rem var(--box-shadow-color);
+    border-color: var(--accent-color);
+}
+
+.aboutme {
+    background: var(--secondary-bg-color);
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.aboutme p {
+    font-size: 1.9rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    color: var(--light-text-color);
+    line-height: 1.8;
+}
+
+.aboutme p span {
+    color: var(--accent-light);
+    font-weight: 600;
+}
+
+.education {
+    background: var(--bg-color);
+    padding-top: 12rem;
+}
+
+.timeline-items {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: var(--accent-dark);
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item {
+    margin-bottom: 5rem;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: 50px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.timeline-dot {
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+    z-index: 1;
+    transition: all var(--transition-speed) ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    background-color: var(--accent-light);
+    transform: translateX(-50%) scale(1.3);
+    box-shadow: 0 0 1.5rem var(--box-shadow-color);
+}
+
+.timeline-date {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    margin: 0 0 1.2rem;
+    letter-spacing: 0.05rem;
+}
+
+.timeline-content {
+    background-color: var(--secondary-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem var(--card-shadow-color);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border-left: 4px solid var(--accent-dark);
+}
+
+.timeline-content:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 1rem 2.5rem var(--box-shadow-color);
+    border-left-color: var(--accent-light);
+}
+
+.timeline-content h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+}
+
+.timeline-content p {
+    font-size: 1.7rem;
+    color: var(--light-text-color);
+    line-height: 1.7;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: calc(50% + 25px);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: calc(50% + 25px);
+}
+
+.services {
+    background: var(--secondary-bg-color);
+    padding-top: 12rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 3.5rem;
+}
+
+.service-card {
+    background: var(--bg-color);
+    padding: 4.5rem 3.5rem;
+    border-radius: 1.8rem;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-color);
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 0.5rem 1.5rem var(--card-shadow-color);
+}
+
+.service-card:hover {
+    transform: translateY(-1.2rem) scale(1.02);
+    box-shadow: 0 2rem 4rem var(--box-shadow-color);
+    border-bottom: 5px solid var(--accent-light);
+    background: linear-gradient(to bottom, var(--bg-color), rgba(138, 65, 245, 0.08));
+}
+
+.service-icon {
+    font-size: 6rem;
+    color: var(--accent-light);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 1rem var(--box-shadow-color);
+}
+
+.service-card h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.service-card p {
+    font-size: 1.7rem;
+    color: var(--light-text-color);
+    line-height: 1.7;
+}
+
+.portfolio {
+    background: var(--bg-color);
+    padding-top: 12rem;
+}
+
+.portfolio-carousel-wrapper {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.portfolio-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio-carousel::-webkit-scrollbar {
+    height: 1rem;
+}
+
+.portfolio-carousel::-webkit-scrollbar-track {
+    background: #2A2A2D;
+    border-radius: 1rem;
+}
+
+.portfolio-carousel::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 1rem;
+    transition: background var(--transition-speed) ease;
+}
+
+.portfolio-carousel::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-light);
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+    width: 38rem;
+    background: var(--secondary-bg-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    scroll-snap-align: start;
+    box-shadow: 0 0.8rem 2rem var(--card-shadow-color);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-0.8rem) scale(1.02);
+    box-shadow: 0 1.5rem 3.5rem var(--box-shadow-color);
+    border-color: var(--accent-light);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.portfolio-info {
+    padding: 3rem;
+    position: relative;
+}
+
+.portfolio-info h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--accent-light);
+}
+
+.portfolio-info p {
+    font-size: 1.6rem;
+    color: var(--light-text-color);
+    line-height: 1.7;
+}
+
+.whyme {
+    background: var(--secondary-bg-color);
+    padding-top: 12rem;
+}
+
+.whyme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 3.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.whyme-card {
+    background: var(--bg-color);
+    padding: 4rem 3.5rem;
+    border-radius: 1.8rem;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-color);
+    box-shadow: 0 0.5rem 1.5rem var(--card-shadow-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.whyme-card:hover {
+    transform: translateY(-1.2rem) scale(1.02);
+    box-shadow: 0 2rem 4rem var(--box-shadow-color);
+    border-bottom-color: var(--accent-light);
+    background: linear-gradient(to bottom, var(--bg-color), rgba(138, 65, 245, 0.08));
+}
+
+.whyme-icon {
+    font-size: 5rem;
+    color: var(--accent-light);
+    margin-bottom: 1.8rem;
+    text-shadow: 0 0 1rem var(--box-shadow-color);
+}
+
+.whyme-card h3 {
+    font-size: 2.3rem;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.whyme-card p {
+    font-size: 1.6rem;
+    color: var(--light-text-color);
+    line-height: 1.7;
+}
+
+.learning {
+    background: var(--bg-color);
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    min-height: unset;
+}
+
+.learning-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.learning-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+    background: var(--secondary-bg-color);
+    border: 1px solid var(--accent-dark);
+    padding: 1.2rem 2rem;
+    border-radius: 3rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.learning-pill:hover {
+    border-color: var(--accent-light);
+    color: var(--text-color);
+    transform: translateY(-0.3rem);
+}
+
+.learning-pill i {
+    font-size: 2rem;
+    color: var(--accent-light);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    border: 1px solid var(--accent-dark);
+    padding: 0.7rem 1.6rem;
+    border-radius: 3rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.project-link:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1.5rem var(--box-shadow-color);
+}
+
+.project-link i {
+    font-size: 1.8rem;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: var(--accent-color);
+    border: none;
+    padding: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    font-size: 3.5rem;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.carousel-btn:hover {
+    background: var(--accent-dark);
+    color: var(--text-color);
+    box-shadow: 0 0 2rem var(--box-shadow-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.skills {
+    background: var(--secondary-bg-color);
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-section {
+    flex: 1 1 48%;
+    min-width: 35rem;
+    background: var(--bg-color);
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.8rem 2.5rem var(--card-shadow-color);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills-section h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: var(--accent-light);
+    border-bottom: 2px solid var(--accent-dark);
+    padding-bottom: 0.8rem;
+    display: inline-block;
+    letter-spacing: 0.08rem;
+}
+
+.skill-bar {
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.skill-bar p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.skill-bar .percentage-value {
+    color: var(--accent-light);
+    font-weight: 600;
+}
+
+.skill-bar .bar {
+    background-color: #333338;
+    height: 1.2rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.skill-bar .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-dark), var(--accent-light));
+    border-radius: 0.6rem;
+    transition: width 1.2s ease-in-out;
+}
+
+.professional-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.radial-bar {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.radial-bar svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.radial-bar .progress-background {
+    fill: none;
+    stroke: #333338;
+    stroke-width: 10;
+}
+
+.radial-bar .progress {
+    fill: none;
+    stroke: var(--accent-color);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease-in-out;
+    box-shadow: 0 0 1rem var(--box-shadow-color);
+}
+
+.radial-bar .percentage-icon {
+    font-size: 4rem;
+    color: var(--accent-light);
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 0.8rem var(--box-shadow-color);
+}
+
+.radial-bar .percentage {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-top: -0.5rem;
+}
+
+.radial-bar .skill-name {
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--light-text-color);
+}
+
+.contact {
+    background: var(--bg-color);
+    padding-top: 12rem;
+}
+
+.contact form {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact form .input-box input,
+.contact form .input-group-2 textarea {
+    width: 49%;
+    padding: 1.8rem;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    background: var(--secondary-bg-color);
+    border-radius: 0.8rem;
+    margin-bottom: 2.5rem;
+    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact form .input-box input::placeholder,
+.contact form .input-group-2 textarea::placeholder {
+    color: var(--light-text-color);
+}
+
+.contact form .input-box input:focus,
+.contact form .input-group-2 textarea:focus {
+    border-color: var(--accent-light);
+    box-shadow: 0 0 1rem var(--box-shadow-color);
+    background: #222225;
+}
+
+.contact form .input-group-2 textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 18rem;
+    margin-bottom: 3.5rem;
+}
+
+.contact form .btn {
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 9%;
+    background: var(--secondary-bg-color);
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer .social {
+    margin-bottom: 2.5rem;
+}
+
+.footer .social a {
+    background: var(--bg-color);
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    margin: 0 0.8rem;
+}
+
+.footer .social a:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1.8rem var(--box-shadow-color);
+}
+
+.footer .list {
+    list-style: none;
+    display: flex;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer .list li a {
+    font-size: 1.7rem;
+    color: var(--light-text-color);
+    transition: var(--transition-speed);
+}
+
+.footer .list li a:hover {
+    color: var(--accent-light);
+}
+
+.footer .copyright {
+    font-size: 1.6rem;
+    color: #888888;
+    margin-top: 2rem;
+    letter-spacing: 0.03rem;
+}
+
+.visitor-counter {
+    margin-top: 1.5rem;
+    opacity: 0.85;
+}
+
+.visitor-counter img {
+    height: 2rem;
+    border-radius: 0.4rem;
+}
+
+.chatbot-toggler {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 4rem;
+    height: 6rem;
+    width: 6rem;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 1.5rem var(--box-shadow-color);
+    transition: all var(--transition-speed) ease;
+    z-index: 1000;
+}
+
+.chatbot-toggler span {
+    position: absolute;
+    font-size: 3rem;
+    transition: all var(--transition-speed) ease;
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent-dark), var(--accent-light));
+    z-index: 1100;
+    transition: width 0.1s ease-out;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 3.5rem;
+    left: 4rem;
+    height: 5rem;
+    width: 5rem;
+    background: var(--secondary-bg-color);
+    border: 1px solid var(--accent-dark);
+    color: var(--accent-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.4);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: all var(--transition-speed) ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .back-to-top { left: 2rem; bottom: 2rem; height: 4.6rem; width: 4.6rem; }
+}
+
+/* Copy-email button */
+.copy-email-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 0 0.8rem var(--box-shadow-color);
+}
+
+.copy-email-btn:hover {
+    background: var(--accent-color);
+    color: var(--secondary-bg-color);
+}
+
+.copy-toast {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(1rem);
+    background: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 1.5rem var(--box-shadow-color);
+    z-index: 1200;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.copy-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.chatbot-toggler .close-icon {
+    opacity: 0;
+}
+
+.chatbot {
+    position: fixed;
+    right: 4rem;
+    bottom: 11rem;
+    width: 40rem;
+    background: var(--secondary-bg-color);
+    border-radius: 2rem;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.show-chatbot .chatbot-toggler {
+    transform: rotate(90deg);
+    background: var(--accent-dark);
+}
+
+body.show-chatbot .chatbot-toggler .close-icon {
+    opacity: 1;
+}
+
+body.show-chatbot .chatbot-toggler span:first-child {
+    opacity: 0;
+}
+
+body.show-chatbot .chatbot {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.chatbot header {
+    padding: 1.8rem 2.5rem;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.chatbot header h2 {
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+}
+
+.chatbot header .close-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.chatbot header .close-btn:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: var(--text-color);
+}
+
+.chatbot .chatbox {
+    height: 45rem;
+    padding: 2rem;
+    overflow-y: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background: #111113;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+}
+
+.chatbox li {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.chatbox .incoming span {
+    height: 3.8rem;
+    width: 3.8rem;
+    color: var(--bg-color);
+    background: var(--accent-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 6px;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.chatbox .outgoing {
+    justify-content: flex-end;
+}
+
+.chatbox .chat p {
+    padding: 1.2rem 1.6rem;
+    border-radius: 1.5rem;
+    max-width: 85%;
+    color: var(--text-color);
+    white-space: pre-wrap;
+    font-size: 1.4rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: #252528;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+.chatbox .incoming p {
+    background: var(--secondary-bg-color);
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 58%;
+    }
+    .portfolio-carousel-wrapper {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+    .header.scrolled {
+        padding: 1.5rem 4%;
+    }
+    section {
+        padding: 10rem 4% 2rem;
+    }
+    .footer {
+        padding: 3rem 4%;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content .text-animation {
+        font-size: 3.2rem;
+    }
+    .home-content p {
+        padding: 0 2rem;
+        max-width: 70rem;
+    }
+    .skills-section {
+        flex: 1 1 100%;
+        min-width: unset;
+    }
+    .portfolio-carousel-wrapper {
+        padding: 0;
+    }
+    .carousel-btn {
+        padding: 1.2rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--secondary-bg-color);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all var(--transition-speed) ease-in-out;
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+    }
+    .navbar.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2.2rem;
+        margin: 1.8rem 0;
+        text-align: center;
+    }
+    .navbar a::after {
+        left: 50%;
+        width: 60%;
+        transform: translateX(-50%);
+    }
+    .home-content h1 {
+        font-size: 4.8rem;
+    }
+    .home-content .text-animation {
+        font-size: 2.8rem;
+    }
+    .home-content p {
+        font-size: 1.7rem;
+        padding: 0 2rem;
+    }
+    .btn-group {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .btn-group .btn {
+        width: 85%;
+        max-width: 35rem;
+        padding: 1.5rem 3rem;
+    }
+    .btn-group .btn:nth-child(2) {
+        padding: 1.3rem 3rem;
+    }
+    .timeline-items::before {
+        left: 20px;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 60px;
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .timeline-dot {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+    .portfolio-carousel {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .portfolio-item {
+        width: 90vw;
+        flex-shrink: 0;
+    }
+    .carousel-btn {
+        top: 45%;
+    }
+    .chatbot {
+        right: 2rem;
+        bottom: 9rem;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem 5%;
+    }
+    section {
+        padding: 8rem 5% 2rem;
+    }
+    .heading {
+        font-size: 3.8rem;
+    }
+    .home-content h1 {
+        font-size: 4.2rem;
+    }
+    .home-content .text-animation {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+    .social-icons a {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 2.2rem;
+    }
+    .btn-group .btn {
+        width: 100%;
+        max-width: 30rem;
+    }
+    .timeline-content {
+        padding: 2rem;
+    }
+    .timeline-content h3 {
+        font-size: 2.2rem;
+    }
+    .contact form .input-box input,
+    .contact form .input-group-2 textarea {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .footer .list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.quick-replies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 5.3rem;
+}
+
+.quick-reply-btn {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quick-reply-btn:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+}
+
+.typing-dots span {
+    height: 0.6rem;
+    width: 0.6rem;
+    background: var(--light-text-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0.2rem;
+    animation: typing 1s infinite ease-in-out;
+}
+
+.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*
+================================
+    ARABIC / RTL SUPPORT
+================================
+*/
+html[dir="rtl"] body {
+    font-family: 'Tajawal', 'Poppins', sans-serif;
+}
+html[dir="rtl"] .navbar a { margin-left: 0; margin-right: 2.4rem; }
+html[dir="rtl"] .logo { order: 2; }
+html[dir="rtl"] .social-icons,
+html[dir="rtl"] .btn-group,
+html[dir="rtl"] .professional-skills,
+html[dir="rtl"] .contact-links,
+html[dir="rtl"] .footer .list { direction: rtl; }
+html[dir="rtl"] .skill-bar p { flex-direction: row-reverse; }
+html[dir="rtl"] .timeline-item:nth-child(odd) { padding-right: 0; padding-left: 50px; text-align: left; }
+html[dir="rtl"] .timeline-item:nth-child(even) { padding-left: 0; padding-right: 50px; text-align: right; }
+html[dir="rtl"] .timeline-item:nth-child(odd) .timeline-content { margin-right: 0; margin-left: calc(50% + 25px); }
+html[dir="rtl"] .timeline-item:nth-child(even) .timeline-content { margin-left: 0; margin-right: calc(50% + 25px); }
+html[dir="rtl"] .timeline-content,
+html[dir="rtl"] .experience-content { border-left: none; border-right: 4px solid var(--accent-dark); }
+html[dir="rtl"] .timeline-content:hover,
+html[dir="rtl"] .experience-content:hover { border-right-color: var(--accent-light); }
+html[dir="rtl"] .service-card,
+html[dir="rtl"] .experience-content ul,
+html[dir="rtl"] .aboutme p { text-align: center; }
+html[dir="rtl"] .experience-content ul { padding-left: 0; padding-right: 2rem; }
+html[dir="rtl"] .experience-items { padding-left: 0; padding-right: 3.5rem; }
+html[dir="rtl"] .experience-items::before { left: auto; right: 0.7rem; }
+html[dir="rtl"] .experience-item::before { left: auto; right: -3.5rem; }
+html[dir="rtl"] .quick-replies { padding-left: 0; padding-right: 5.3rem; }
+html[dir="rtl"] .chatbox .incoming span { margin-right: 0; margin-left: 1.5rem; }
+
+/* Language toggle button */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-left: 3rem;
+    transition: all var(--transition-speed) ease;
+    white-space: nowrap;
+}
+html[dir="rtl"] .lang-toggle { margin-left: 0; margin-right: 3rem; font-family: 'Tajawal', sans-serif; }
+.lang-toggle:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1.5rem var(--box-shadow-color);
+}
+@media (max-width: 768px) {
+    .lang-toggle { margin: 0 0 1.5rem; }
+    html[dir="rtl"] .lang-toggle { margin: 0 0 1.5rem; }
+}
+
+/*
+================================
+    CREATIVE EXTRAS
+================================
+*/
+#hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+.home { z-index: 1; }
+.home-content { position: relative; z-index: 2; }
+
+.section-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.section-reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tilt-card { transition: transform 0.25s ease, box-shadow var(--transition-speed) ease; transform-style: preserve-3d; will-change: transform; }
+
+.heading-underline {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+    margin: -4.5rem auto 5rem;
+    border-radius: 2px;
+    transition: width 1s ease;
+}
+.section-reveal.in-view .heading-underline { width: 8rem; }
+
+/*
+================================
+    EXPERIENCE SECTION
+================================
+    Add this block to the end of your existing style.css.
+    It reuses the same color variables and patterns as your
+    Education timeline, so it matches the rest of the site.
+*/
+
+.experience {
+    background: var(--secondary-bg-color);
+    padding-top: 12rem;
+}
+
+.experience-items {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 3.5rem;
+}
+
+.experience-items::before {
+    content: '';
+    position: absolute;
+    left: 0.7rem;
+    top: 0.6rem;
+    width: 3px;
+    height: calc(100% - 0.6rem);
+    background-color: var(--accent-dark);
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 4.5rem;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -3.5rem;
+    top: 0.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+    z-index: 1;
+    transition: all var(--transition-speed) ease;
+}
+
+.experience-item.current::before {
+    background-color: var(--accent-light);
+    box-shadow: 0 0 1.5rem var(--box-shadow-color);
+}
+
+.experience-item:hover::before {
+    background-color: var(--accent-light);
+    transform: scale(1.15);
+    box-shadow: 0 0 1.5rem var(--box-shadow-color);
+}
+
+.experience-date {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.05rem;
+}
+
+.current-badge {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    padding: 0.3rem 1.2rem;
+    border-radius: 2rem;
+    margin-left: 1.2rem;
+    vertical-align: middle;
+    letter-spacing: 0.03rem;
+}
+
+.experience-content {
+    background-color: var(--bg-color);
+    padding: 3.5rem;
+    border-radius: 1rem;
+    border-left: 4px solid var(--accent-dark);
+    box-shadow: 0 0.5rem 1.5rem var(--card-shadow-color);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.experience-content:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 1rem 2.5rem var(--box-shadow-color);
+    border-left-color: var(--accent-light);
+}
+
+.experience-content h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.6rem;
+}
+
+.experience-content h4 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--accent-light);
+    margin-bottom: 2rem;
+}
+
+.experience-content ul {
+    padding-left: 2rem;
+}
+
+.experience-content li {
+    font-size: 1.7rem;
+    color: var(--light-text-color);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.experience-content li:last-child {
+    margin-bottom: 0;
+}
+
+.experience-content li::marker {
+    color: var(--accent-color);
+}
+
+/* Responsive tweaks, matching the site's existing breakpoints */
+@media (max-width: 768px) {
+    .experience-items {
+        padding-left: 3rem;
+    }
+    .experience-content {
+        padding: 2.5rem;
+    }
+    .experience-content h3 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-items {
+        padding-left: 2.6rem;
+    }
+    .experience-item::before {
+        left: -2.6rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .experience-content {
+        padding: 2rem;
+    }
+}
+
+    </style>
+
+
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">
+        <i class="bx bx-up-arrow-alt"></i>
+    </button>
+    <div class="copy-toast" id="copyToast" data-i18n="copyToast">Email copied!</div>
+
+    <header class="header">
+        <a href="#home" class="logo">Amira <span>.</span></a>
+        <button class="lang-toggle" id="langToggle" type="button">🌐 العربية</button>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active" data-i18n="nav.home">Home</a>
+            <a href="#aboutme" data-i18n="nav.about">About me</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#education" data-i18n="nav.education">Education</a>
+            <a href="#services" data-i18n="nav.services">Services</a>
+            <a href="#portfolio" data-i18n="nav.portfolio">My works</a> 
+            <a href="#whyme" data-i18n="nav.whyme">Why Me</a>
+            <a href="#learning" data-i18n="nav.learning">Learning</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div id="hero-particles"></div>
+        <div class="home-content">
+            <span class="open-to-work"><span class="dot"></span><span data-i18n="hero.openToWork">Open to Work</span></span>
+            <h1 data-i18n="hero.greeting">Hi, I am <span>Amira</span></h1>
+            <h3 class="text-animation"> <span id="typePrefix" data-i18n="hero.imA">I'm a</span> 
+                <span id="typeTarget"></span></h3> 
+            <p data-i18n="hero.pitch">
+                As a passionate Computer Science graduate and web developer, I combine creativity with logic to build innovative and effective technical solutions. Explore my portfolio and discover my journey in the world of technology.
+            </p>
+
+            <div class="social-icons">    
+                <a href="https://www.linkedin.com/in/amira-alattas-26280b243" target="_blank" aria-label="LinkedIn profile"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Amira1326" target="_blank" aria-label="GitHub profile"><i class="bx bxl-github"></i></a>
+                <a href="https://x.com/ami_prins1" target="_blank" aria-label="X profile (formerly Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/966570035629" target="_blank" aria-label=" Whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="mailto:amira.alattas21@gmail.com" target="_blank" aria-label="Email"><i class="bx bx-envelope"></i></a>
+                <button class="copy-email-btn" id="copyEmailBtn" type="button" aria-label="Copy email address"><i class="bx bx-copy"></i></button>
+            </div>
+
+            <div class="btn-group">
+                <a href="Amira-Alattas-CV-English.pdf" id="cvDownloadBtn" class="btn" data-i18n="hero.cvBtn" download>Download CV</a>
+                <a href="#contact" class="btn" data-i18n="hero.contactBtn">Contact</a>
+            </div>
+        </div>
+    </section> 
+
+    <section class="aboutme section-reveal" id="aboutme">
+        <h2 class="heading" data-i18n="about.heading">About <span>Me</span></h2>
+        <span class="heading-underline"></span>
+        <p data-i18n="about.text">
+            I am <span>Amira</span> a Computer Science graduate with Distinction from Jazan University, holding a cumulative GPA of 4.90 out of 5.00. My passion stems from the intersection of programming, intuitive User Interface/User Experience (UI/UX) design, and the profound world of data science. Alongside my technical work, I currently manage a school's Classera platform and its admissions and registration operations — experience that keeps me grounded in real, practical problem-solving. I believe technology is a powerful tool for creating innovative solutions and improving quality of life, and I'm always seeking opportunities to apply my skills to projects with real impact.
+        </p>
+    </section>
+
+    <section class="experience section-reveal" id="experience">
+        <h2 class="heading" data-i18n="experience.heading">Work <span>Experience</span></h2>
+        <span class="heading-underline"></span>
+        <div class="experience-items">
+
+            <div class="experience-item current tilt-card">
+                <div class="experience-date" data-i18n="experience.item1.date">March 2026 – Present <span class="current-badge" data-i18n="experience.currentBadge">Current</span></div>
+                <div class="experience-content">
+                    <h3 data-i18n="experience.item1.role">Admissions &amp; Registration Officer, Classera Platform Administrator</h3>
+                    <h4 data-i18n="experience.item1.org">Bawabat Al-Tifl International School · Ajyal Group</h4>
+                    <ul>
+                        <li data-i18n="experience.item1.b1">Run the school's Classera platform end to end: activating teacher, student and parent accounts, building schedules, and resolving technical issues on the spot.</li>
+                        <li data-i18n="experience.item1.b2">Own admissions from first document to enrollment — reviewing files, verifying paperwork, and keeping parents informed at every step.</li>
+                        <li data-i18n="experience.item1.b3">Issue and track registration invoices and outstanding dues, keeping databases clean enough to produce accurate financial reports on demand.</li>
+                        <li data-i18n="experience.item1.b4">Automated recurring administrative tasks to cut manual work and speed up daily operations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item tilt-card">
+                <div class="experience-date" data-i18n="experience.item2.date">2024</div>
+                <div class="experience-content">
+                    <h3 data-i18n="experience.item2.role">Trainee</h3>
+                    <h4 data-i18n="experience.item2.org">Jazan Chamber of Commerce</h4>
+                    <ul>
+                        <li data-i18n="experience.item2.b1">Built administrative reports in Microsoft Excel to track KPIs and support management decisions.</li>
+                        <li data-i18n="experience.item2.b2">Organized and archived business records and financial transactions for fast, accurate retrieval.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="education section-reveal" id="education">
+        <h2 class="heading" data-i18n="education.heading">Education</h2>
+        <span class="heading-underline"></span>
+        <div class="timeline-items"> 
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-i18n="education.item1.date">2020</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="education.item1.title">High School</h3>
+                    <p data-i18n="education.item1.text">Successfully completed my high school education, paving the way for my specialization in Computer Science.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-i18n="education.item2.date">2025</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="education.item2.title">Bachelor of Computer Science</h3>
+                    <p data-i18n="education.item2.text">Graduated from Jazan University with a Bachelor's degree in Computer Science, achieving a cumulative GPA of 4.90 out of 5.00, with a focus on web development and data science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section-reveal" id="services">
+        <h2 class="heading" data-i18n="services.heading">My <span>Services</span></h2>
+        <span class="heading-underline"></span>
+
+        <div class="services-grid">
+            <div class="service-card tilt-card">
+                <i class="bx bx-code-alt service-icon"></i> 
+                <h3 data-i18n="services.card1.title">Web Development</h3>
+                <p data-i18n="services.card1.text">I offer comprehensive web development solutions, from designing attractive front-end interfaces using HTML, CSS, JavaScript to building robust and efficient back-end systems.</p>
+            </div>
+
+            <div class="service-card tilt-card">
+                <i class="bx bxs-color service-icon"></i> 
+                <h3 data-i18n="services.card2.title">UI/UX Design</h3>
+                <p data-i18n="services.card2.text">Specialized in designing user-friendly User Experience (UX) and visually appealing, intuitive User Interface (UI) to ensure optimal user interaction.</p>
+            </div>
+
+            <div class="service-card tilt-card">
+                <i class="bx bxs-bar-chart-alt-2 service-icon"></i> 
+                <h3 data-i18n="services.card3.title">Data Science &amp; Analysis</h3>
+                <p data-i18n="services.card3.text">I transform raw data into valuable and actionable insights, utilizing advanced data analysis tools and techniques to support smart decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio section-reveal" id="portfolio">
+        <h2 class="heading" data-i18n="portfolio.heading">My <span>Works</span></h2>
+        <span class="heading-underline"></span>
+
+        <div class="portfolio-carousel-wrapper">
+            <button class="carousel-btn prev-btn" aria-label="Previous Slide">
+                <i class="bx bx-chevron-left"></i>
+            </button>
+            <div class="portfolio-carousel">
+                <div class="portfolio-item tilt-card">
+                    <img src="ux&ui1.png" alt="Project 1 Image">
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.item1.title">A Tale of Coffee</h3>
+                        <p data-i18n="portfolio.item1.text">UI/UX design of a modern coffee shop app , created in Figma with a clean and user-friendly interface</p>
+                        <!-- TODO Amira: replace this href with the real Figma/GitHub link for this project -->
+                        <a href="https://github.com/Amira1326" target="_blank" class="project-link"><i class="bx bxl-github"></i> <span data-i18n="portfolio.viewProject">View Project</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card">
+                    <img src="school2.png" alt="Project 2 Image">
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.item2.title">School Management System</h3>
+                        <p data-i18n="portfolio.item2.text">Built a school Management System with features for teachers and administration <br>
+                            (USE PHP,SQL,HTML,CSS,JS) </p>
+                        <!-- TODO Amira: replace this href with the real GitHub repo link for this project -->
+                        <a href="https://github.com/Amira1326" target="_blank" class="project-link"><i class="bx bxl-github"></i> <span data-i18n="portfolio.viewProject">View Project</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card">
+                    <img src="cv.jpg" alt="Project 3 Image">
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.item3.title">Object Detection Project </h3>
+                        <p data-i18n="portfolio.item3.text">Object Detection project using YOLOv8 identify and localize multiple objects in images</p>
+                        <!-- TODO Amira: replace this href with the real GitHub repo link for this project -->
+                        <a href="https://github.com/Amira1326" target="_blank" class="project-link"><i class="bx bxl-github"></i> <span data-i18n="portfolio.viewProject">View Project</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card">
+                    <img src="dash.png" alt="Project 4 Image">
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.item4.title">Interactive Dashboard</h3>
+                        <p data-i18n="portfolio.item4.text">Created an interactive data visualization dashboard using Power BI for analyzing and presenting insights </p>
+                        <!-- TODO Amira: replace this href with the real Power BI/GitHub link for this project -->
+                        <a href="https://github.com/Amira1326" target="_blank" class="project-link"><i class="bx bxl-github"></i> <span data-i18n="portfolio.viewProject">View Project</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card">
+                    <img src="Amira.jpg" alt="Project 5 Image">
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.item5.title">Personal Portfolio Website</h3>
+                        <p data-i18n="portfolio.item5.text">Designed and developer a responsive personal website to showcase projects and achievements (HTML,CSS,JS)</p>
+                        <a href="https://github.com/Amira1326/My-profolio" target="_blank" class="project-link"><i class="bx bxl-github"></i> <span data-i18n="portfolio.viewProject">View Project</span></a>
+                    </div>
+                </div>
+                </div>
+            <button class="carousel-btn next-btn" aria-label="Next Slide">
+                <i class="bx bx-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="whyme section-reveal" id="whyme">
+        <h2 class="heading" data-i18n="whyme.heading">Why Work <span>With Me</span></h2>
+        <div class="whyme-grid">
+            <div class="whyme-card tilt-card">
+                <i class="bx bx-target-lock whyme-icon"></i>
+                <h3 data-i18n="whyme.card1.title">Real-World Tested</h3>
+                <p data-i18n="whyme.card1.text">I don't just study systems — I run one daily. Managing Classera and admissions taught me what actually breaks in production, not just in theory.</p>
+            </div>
+            <div class="whyme-card tilt-card">
+                <i class="bx bx-shield-quarter whyme-icon"></i>
+                <h3 data-i18n="whyme.card2.title">Precision Under Pressure</h3>
+                <p data-i18n="whyme.card2.text">Managing invoices, student records, and parent communication taught me to stay accurate even when the stakes are real.</p>
+            </div>
+            <div class="whyme-card tilt-card">
+                <i class="bx bx-trending-up whyme-icon"></i>
+                <h3 data-i18n="whyme.card3.title">Always Building</h3>
+                <p data-i18n="whyme.card3.text">From a 4.90 GPA to five shipped side projects, I learn by doing — not just by collecting certificates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning section-reveal" id="learning">
+        <h2 class="heading" data-i18n="learning.heading">Currently <span>Learning</span></h2>
+        <!-- TODO Amira: keep this list updated every so often — swap items as you move on
+             to new courses/skills so it always reflects what you're actually doing now. -->
+        <div class="learning-pills">
+            <span class="learning-pill"><i class="bx bx-bulb"></i> <span data-i18n="learning.item1">Going deeper into Azure AI, building on my Fundamentals certification</span></span>
+            <span class="learning-pill"><i class="bx bx-bulb"></i> <span data-i18n="learning.item2">Practicing production-level React and API integration</span></span>
+            <span class="learning-pill"><i class="bx bx-bulb"></i> <span data-i18n="learning.item3">Reading up on prompt engineering and applied LLM workflows</span></span>
+        </div>
+    </section>
+
+    <section class="skills section-reveal" id="skills">
+        <h2 class="heading" data-i18n="skills.heading">My <span>Skills</span></h2>
+        <span class="heading-underline"></span>
+
+        <div class="skills-container">
+            <div class="skills-section">
+                <h3 data-i18n="skills.technicalHeading">Technical Skills</h3>
+                <div class="skill-bar">
+                    <p>HTML <span class="percentage-value">90%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>CSS <span class="percentage-value">95%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>PHP,SQL <span class="percentage-value">80%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>JavaScript <span class="percentage-value">80%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>Python <span class="percentage-value">80%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>Java <span class="percentage-value">75%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>Computer Vision <span class="percentage-value">65%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>Power BI <span class="percentage-value">70%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <p>UX,UI <span class="percentage-value">85%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3 data-i18n="skills.professionalHeading">Professional Skills</h3>
+                <div class="professional-skills">
+                    <div class="radial-bar" data-percent="95">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+                            <circle class="progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <i class="fa-solid fa-lightbulb percentage-icon"></i> <p class="percentage"></p> <p class="skill-name" data-i18n="skills.pro1">Problem Solving</p> </div>
+                    <div class="radial-bar" data-percent="90">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+                            <circle class="progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <i class="fa-solid fa-chart-bar percentage-icon"></i> <p class="percentage"></p>
+                        <p class="skill-name" data-i18n="skills.pro2">Data Analysis</p>
+                    </div>
+                    <div class="radial-bar" data-percent="92">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+                            <circle class="progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <i class="fa-solid fa-rocket percentage-icon"></i> <p class="percentage"></p>
+                        <p class="skill-name" data-i18n="skills.pro3">Innovation</p>
+                    </div>
+                    <div class="radial-bar" data-percent="88">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+                            <circle class="progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <i class="fa-solid fa-comments percentage-icon"></i> <p class="percentage"></p>
+                        <p class="skill-name" data-i18n="skills.pro4">Communication</p>
+                    </div>
+
+                    <div class="radial-bar" data-percent="88">
+
+  <svg viewBox="0 0 100 100">
+
+    <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+
+    <circle class="progress" cx="50" cy="50" r="40"></circle>
+
+  </svg>
+
+  <i class="fa-solid fa-clock percentage-icon"></i>
+
+  <p class="percentage"></p>
+
+  <p class="skill-name" data-i18n="skills.pro5">Time Management</p>
+
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-reveal" id="contact">
+        <h2 class="heading" data-i18n="contact.heading">Contact <span>Me</span></h2>
+        <span class="heading-underline"></span>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="03aa9c43-44cf-4f10-ac8d-83b9b2ab590f">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="name" data-i18n-placeholder="contact.name" placeholder="Full Name" required="">
+                    <input type="email" name="email" data-i18n-placeholder="contact.email" placeholder="Email Address" required="">
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="phone" data-i18n-placeholder="contact.phone" placeholder="Phone Number"> 
+                    <input type="text" name="subject" data-i18n-placeholder="contact.subject" placeholder="Subject" required="">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="message" id="message" cols="30" rows="10" data-i18n-placeholder="contact.message" placeholder="Your Message" required=""></textarea>
+                <input type="submit" data-i18n-value="contact.send" value="Send Message" class="btn">
+            </div>
+            <!-- Optional: Redirect after success -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        </form>
+    </section>
+
+    <footer class="footer">
+       <ul class="list">
+            <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+            <li><a href="#aboutme" data-i18n="nav.about">About me</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#services" data-i18n="nav.services">Services</a></li>
+            <li> <a href="#portfolio" data-i18n="nav.portfolio">My works</a></li>
+            <li><a href="#whyme" data-i18n="nav.whyme">Why Me</a></li>
+            <li><a href="#learning" data-i18n="nav.learning">Learning</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+
+        <p class="copyright" data-i18n="footer.copyright">
+            © 2026 Amira. | All Rights Reserved
+        </p>
+        <div class="visitor-counter">
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=amira1326.my-profolio&left_color=1A1A1D&right_color=8A41F5" alt="Visitor count badge" loading="lazy">
+        </div>
+    </ul></footer> 
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined close-icon">close</span> 
+    </button>
+
+    <div class="chatbot">
+        <header>
+            <h2>Amira's Bot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox"></ul>
+    </div>
+    
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const SELECTORS = {
+        CHATBOT_TOGGLER: '.chatbot-toggler',
+        CHATBOT: '.chatbot',
+        CLOSE_BUTTON: '.chatbot header span',
+        CHATBOX: '.chatbox',
+        MESSAGE_CONTENT: '.message-content',
+        QUICK_REPLIES: '.quick-replies',
+        QUICK_REPLY_BUTTON: '.quick-reply-btn',
+        TYPING_DOTS: '.typing-dots',
+        BOT_ICON: '.material-symbols-rounded',
+    };
+
+    const CLASSES = {
+        SHOW_CHATBOT: 'show-chatbot',
+        CHAT: 'chat',
+        OUTGOING: 'outgoing',
+        INCOMING: 'incoming',
+        TYPING: 'typing',
+    };
+
+    const TYPING_DELAY_MS = 700;
+
+    const chatbotToggler = document.querySelector(SELECTORS.CHATBOT_TOGGLER);
+    const chatbot = document.querySelector(SELECTORS.CHATBOT);
+    const closeBtn = document.querySelector(SELECTORS.CLOSE_BUTTON);
+    const chatbox = document.querySelector(SELECTORS.CHATBOX);
+    const body = document.body;
+
+    const knowledgeBaseByLang = {
+        en: {
+            "initial": {
+                answer: "Hi! I'm Amira's assistant 🤖 How can I help you today?",
+                buttons: ["Who is Amira?", "Current Experience", "Amira's Skills", "Contact Amira"]
+            },
+            "who is amira?": {
+                answer: "Amira is a Computer Science graduate (AI Track) from Jazan University with a 4.90/5.00 GPA and First Class Honors. She's currently open to new opportunities in AI, data, and technical operations.",
+                buttons: ["Current Experience", "Amira's Skills", "Educational Background", "Go Back to Main Menu"]
+            },
+            "current experience": {
+                answer: "Amira currently works as an Admissions & Registration Officer and Classera Platform Administrator at Bawabat Al-Tifl International School (Ajyal Group), where she runs the school's digital systems end to end.",
+                buttons: ["Who is Amira?", "Amira's Skills", "Contact Amira", "Go Back to Main Menu"]
+            },
+            "amira's skills": {
+                answer: "Amira's skills include Classera platform administration, Python, JavaScript, SQL, Power BI, UI/UX design (Figma), and machine learning with TensorFlow and OpenCV.",
+                buttons: ["Who is Amira?", "Amira's Services", "Contact Amira", "Go Back to Main Menu"]
+            },
+            "amira's services": {
+                answer: "Amira offers services such as responsive web development, intuitive UI/UX design, and data-driven, innovative technical solutions.",
+                buttons: ["Amira's Skills", "Educational Background", "Contact Amira", "Go Back to Main Menu"]
+            },
+            "educational background": {
+                answer: "Amira has a strong educational background with a Bachelor's degree in Computer Science (AI Track) from Jazan University, with a GPA of 4.90/5.00 and First Class Honors.",
+                buttons: ["Who is Amira?", "Amira's Skills", "Amira's Services", "Go Back to Main Menu"]
+            },
+            "contact amira": {
+                answer: "You can reach Amira through the contact form on this website, or connect with her on her social media channels listed in the footer.",
+                buttons: ["Who is Amira?", "Amira's Skills", "Amira's Services", "Go Back to Main Menu"]
+            },
+            "go back to main menu": {
+                answer: "What else would you like to know?",
+                buttons: ["Who is Amira?", "Current Experience", "Amira's Skills", "Contact Amira"]
+            },
+            "_fallback": "I'm sorry, I didn't understand that. Please choose one of the options below."
+        },
+        ar: {
+            "initial": {
+                answer: "مرحبًا بك! أنا المساعد الافتراضي لأميرة 🤖 كيف يمكنني مساعدتك اليوم؟",
+                buttons: ["من هي أميرة؟", "خبرتها الحالية", "مهارات أميرة", "التواصل مع أميرة"]
+            },
+            "من هي أميرة؟": {
+                answer: "أميرة خريجة علوم الحاسب، تخصص الذكاء الاصطناعي، من جامعة جازان، بمعدل تراكمي 4.90 من 5.00 وتقدير امتياز مع مرتبة الشرف الأولى. وهي حاليًا متاحة لفرص عمل جديدة في مجالات الذكاء الاصطناعي وتحليل البيانات والعمليات التقنية.",
+                buttons: ["خبرتها الحالية", "مهارات أميرة", "خلفيتها التعليمية", "العودة إلى القائمة الرئيسية"]
+            },
+            "خبرتها الحالية": {
+                answer: "تعمل أميرة حاليًا مسؤولة عن القبول والتسجيل وإدارة منصة كلاسيرا في مدرسة بوابة الطفل العالمية، التابعة لمجموعة أجيال، حيث تتولى إدارة الأنظمة الرقمية للمدرسة بشكل كامل.",
+                buttons: ["من هي أميرة؟", "مهارات أميرة", "التواصل مع أميرة", "العودة إلى القائمة الرئيسية"]
+            },
+            "مهارات أميرة": {
+                answer: "تشمل مهارات أميرة: إدارة منصة كلاسيرا التعليمية، البرمجة بلغات Python وJavaScript وSQL، تحليل البيانات باستخدام Power BI، تصميم واجهات المستخدم عبر Figma، وتطبيقات التعلّم الآلي باستخدام TensorFlow وOpenCV.",
+                buttons: ["من هي أميرة؟", "خدمات أميرة", "التواصل مع أميرة", "العودة إلى القائمة الرئيسية"]
+            },
+            "خدمات أميرة": {
+                answer: "تقدّم أميرة خدمات في تطوير الويب، وتصميم واجهات المستخدم وتجربته (UI/UX)، وبناء حلول تحليل بيانات مبتكرة قائمة على أسس علمية.",
+                buttons: ["مهارات أميرة", "خلفيتها التعليمية", "التواصل مع أميرة", "العودة إلى القائمة الرئيسية"]
+            },
+            "خلفيتها التعليمية": {
+                answer: "حصلت أميرة على درجة البكالوريوس في علوم الحاسب، تخصص الذكاء الاصطناعي، من جامعة جازان، بمعدل تراكمي 4.90 من 5.00 وتقدير امتياز مع مرتبة الشرف الأولى.",
+                buttons: ["من هي أميرة؟", "مهارات أميرة", "خدمات أميرة", "العودة إلى القائمة الرئيسية"]
+            },
+            "التواصل مع أميرة": {
+                answer: "يمكنك التواصل مع أميرة عبر نموذج التواصل المتوفر في الموقع، أو من خلال حسابات التواصل الاجتماعي المذكورة في تذييل الصفحة.",
+                buttons: ["من هي أميرة؟", "مهارات أميرة", "خدمات أميرة", "العودة إلى القائمة الرئيسية"]
+            },
+            "العودة إلى القائمة الرئيسية": {
+                answer: "ما الذي تودّ معرفته أيضًا؟",
+                buttons: ["من هي أميرة؟", "خبرتها الحالية", "مهارات أميرة", "التواصل مع أميرة"]
+            },
+            "_fallback": "عذرًا، لم أفهم ذلك. يُرجى اختيار أحد الخيارات أدناه."
+        }
+    };
+
+    function getChatLang() {
+        return document.documentElement.lang === 'ar' ? 'ar' : 'en';
+    }
+
+    const createChatLi = (message, className, isBotTyping = false, buttons = []) => {
+        const chatLi = document.createElement("li");
+        chatLi.classList.add(CLASSES.CHAT, className);
+
+        if (className === CLASSES.OUTGOING) {
+            chatLi.innerHTML = `<p>${message}</p>`;
+        } else {
+            const messageContentDiv = document.createElement('div');
+            messageContentDiv.classList.add(SELECTORS.MESSAGE_CONTENT.substring(1));
+
+            const botIcon = document.createElement('span');
+            botIcon.classList.add(SELECTORS.BOT_ICON.substring(1));
+            botIcon.textContent = 'smart_toy';
+
+            const messageParagraph = document.createElement('p');
+
+            if (isBotTyping) {
+                chatLi.classList.add(CLASSES.TYPING);
+                messageParagraph.classList.add(SELECTORS.TYPING_DOTS.substring(1));
+                messageParagraph.innerHTML = '<span>.</span><span>.</span><span>.</span>';
+            } else {
+                messageParagraph.textContent = message;
+            }
+
+            messageContentDiv.appendChild(messageParagraph);
+
+            if (buttons.length > 0) {
+                const quickRepliesDiv = document.createElement("div");
+                quickRepliesDiv.classList.add(SELECTORS.QUICK_REPLIES.substring(1));
+
+                buttons.forEach(buttonText => {
+                    const btn = document.createElement("button");
+                    btn.classList.add(SELECTORS.QUICK_REPLY_BUTTON.substring(1));
+                    btn.textContent = buttonText;
+                    btn.addEventListener("click", () => handleQuickReply(buttonText));
+                    quickRepliesDiv.appendChild(btn);
+                });
+                messageContentDiv.appendChild(quickRepliesDiv);
+            }
+
+            chatLi.appendChild(botIcon);
+            chatLi.appendChild(messageContentDiv);
+        }
+        return chatLi;
+    };
+
+    const appendMessageAndScroll = (chatLi) => {
+        chatbox.appendChild(chatLi);
+        chatbox.scrollTo({
+            top: chatbox.scrollHeight,
+            behavior: 'smooth'
+        });
+    };
+
+    const removeOldQuickReplies = () => {
+        const lastActualBotMessage = Array.from(chatbox.children)
+                                        .reverse()
+                                        .find(li => li.classList.contains(CLASSES.INCOMING) && !li.classList.contains(CLASSES.TYPING));
+
+        if (lastActualBotMessage) {
+            const oldQuickReplies = lastActualBotMessage.querySelector(SELECTORS.QUICK_REPLIES);
+            if (oldQuickReplies) {
+                oldQuickReplies.remove();
+            }
+        }
+    };
+
+    const handleQuickReply = (questionText) => {
+        removeOldQuickReplies();
+        appendMessageAndScroll(createChatLi(questionText, CLASSES.OUTGOING));
+
+        const kb = knowledgeBaseByLang[getChatLang()];
+        const lowerCaseQuestion = questionText.toLowerCase();
+        const responseData = kb[lowerCaseQuestion];
+
+        const incomingTypingLi = createChatLi("Typing...", CLASSES.INCOMING, true);
+        appendMessageAndScroll(incomingTypingLi);
+
+        setTimeout(() => {
+            let finalMessage = "";
+            let finalButtons = [];
+
+            if (responseData) {
+                finalMessage = responseData.answer;
+                finalButtons = (responseData.buttons && responseData.buttons.length > 0)
+                                ? responseData.buttons
+                                : kb["initial"].buttons;
+            } else {
+                finalMessage = kb["_fallback"];
+                finalButtons = kb["initial"].buttons;
+            }
+
+            const finalBotMessageLi = createChatLi(finalMessage, CLASSES.INCOMING, false, finalButtons);
+            chatbox.replaceChild(finalBotMessageLi, incomingTypingLi);
+            appendMessageAndScroll(finalBotMessageLi);
+        }, TYPING_DELAY_MS);
+    };
+
+    const initializeChatbotDisplay = () => {
+        chatbox.innerHTML = '';
+        const kb = knowledgeBaseByLang[getChatLang()];
+        const initialBotMessage = createChatLi(
+            kb["initial"].answer,
+            CLASSES.INCOMING,
+            false,
+            kb["initial"].buttons
+        );
+        appendMessageAndScroll(initialBotMessage);
+    };
+
+    if (chatbotToggler) {
+        chatbotToggler.addEventListener('click', () => {
+            body.classList.toggle(CLASSES.SHOW_CHATBOT);
+            if (body.classList.contains(CLASSES.SHOW_CHATBOT)) {
+                initializeChatbotDisplay();
+            }
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            body.classList.remove(CLASSES.SHOW_CHATBOT);
+        });
+    }
+});
+
+    </script>
+
+    <script>
+// carousel.js
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.portfolio-carousel');
+    const prevBtn = document.querySelector('.carousel-btn.prev-btn');
+    const nextBtn = document.querySelector('.carousel-btn.next-btn');
+
+    if (!carousel || !prevBtn || !nextBtn) {
+        console.warn('Carousel elements not found. Carousel might not function.');
+        return;
+    }
+
+    const scrollAmount = 350;
+
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.href.includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    if (menuIcon && navbar) {
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        };
+
+        navbar.querySelectorAll('a').forEach(link => {
+            link.onclick = () => {
+                menuIcon.classList.remove('bx-x');
+                navbar.classList.remove('active');
+            };
+        });
+    }
+
+    // Shrink/blur header on scroll
+    const header = document.querySelector('.header');
+    if (header) {
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+    }
+
+    // Animate the radial "Professional Skills" circles and their % labels
+    const radialBars = document.querySelectorAll('.radial-bar');
+    const RADIUS = 40;
+    const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+    radialBars.forEach(bar => {
+        const circle = bar.querySelector('.progress');
+        const percentLabel = bar.querySelector('.percentage');
+        const percent = parseInt(bar.getAttribute('data-percent'), 10) || 0;
+        if (circle) {
+            circle.style.strokeDasharray = `${CIRCUMFERENCE}`;
+            circle.style.strokeDashoffset = `${CIRCUMFERENCE}`;
+        }
+
+        const animateBar = () => {
+            if (circle) {
+                const offset = CIRCUMFERENCE - (percent / 100) * CIRCUMFERENCE;
+                circle.style.strokeDashoffset = `${offset}`;
+            }
+            if (percentLabel) {
+                let current = 0;
+                const step = Math.max(1, Math.round(percent / 40));
+                const tick = () => {
+                    current = Math.min(percent, current + step);
+                    percentLabel.textContent = `${current}%`;
+                    if (current < percent) requestAnimationFrame(() => setTimeout(tick, 20));
+                };
+                tick();
+            }
+        };
+
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateBar();
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+        io.observe(bar);
+    });
+
+    // Animate the linear skill bars when they scroll into view
+    const barFills = document.querySelectorAll('.bar-fill');
+    barFills.forEach(fill => {
+        const targetWidth = fill.style.width;
+        fill.style.width = '0%';
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    fill.style.width = targetWidth;
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+        io.observe(fill);
+    });
+});
+
+    </script>
+
+    <script>
+    /* ============================
+       BILINGUAL SUPPORT (EN / AR)
+       ============================ */
+    const translations = {
+        en: {
+            "nav.home": "Home", "nav.about": "About me", "nav.experience": "Experience",
+            "nav.education": "Education", "nav.services": "Services", "nav.portfolio": "My works",
+            "nav.skills": "Skills", "nav.contact": "Contact", "nav.whyme": "Why Me", "nav.learning": "Learning",
+            "hero.greeting": "Hi, I am <span>Amira</span>",
+            "hero.imA": "I'm a",
+            "hero.openToWork": "Open to Work",
+            "hero.pitch": "As a passionate Computer Science graduate and web developer, I combine creativity with logic to build innovative and effective technical solutions. Explore my portfolio and discover my journey in the world of technology.",
+            "hero.cvBtn": "Download CV", "hero.contactBtn": "Contact",
+            "about.heading": "About <span>Me</span>",
+            "about.text": "I am <span>Amira</span> a Computer Science graduate with Distinction from Jazan University, holding a cumulative GPA of 4.90 out of 5.00. My passion stems from the intersection of programming, intuitive User Interface/User Experience (UI/UX) design, and the profound world of data science. Alongside my technical work, I currently manage a school's Classera platform and its admissions and registration operations — experience that keeps me grounded in real, practical problem-solving. I believe technology is a powerful tool for creating innovative solutions and improving quality of life, and I'm always seeking opportunities to apply my skills to projects with real impact.",
+            "experience.heading": "Work <span>Experience</span>",
+            "experience.currentBadge": "Current",
+            "experience.item1.date": "March 2026 – Present",
+            "experience.item1.role": "Admissions &amp; Registration Officer, Classera Platform Administrator",
+            "experience.item1.org": "Bawabat Al-Tifl International School · Ajyal Group",
+            "experience.item1.b1": "Run the school's Classera platform end to end: activating teacher, student and parent accounts, building schedules, and resolving technical issues on the spot.",
+            "experience.item1.b2": "Own admissions from first document to enrollment — reviewing files, verifying paperwork, and keeping parents informed at every step.",
+            "experience.item1.b3": "Issue and track registration invoices and outstanding dues, keeping databases clean enough to produce accurate financial reports on demand.",
+            "experience.item1.b4": "Automated recurring administrative tasks to cut manual work and speed up daily operations.",
+            "experience.item2.date": "2024", "experience.item2.role": "Trainee",
+            "experience.item2.org": "Jazan Chamber of Commerce",
+            "experience.item2.b1": "Built administrative reports in Microsoft Excel to track KPIs and support management decisions.",
+            "experience.item2.b2": "Organized and archived business records and financial transactions for fast, accurate retrieval.",
+            "education.heading": "Education",
+            "education.item1.date": "2020", "education.item1.title": "High School",
+            "education.item1.text": "Successfully completed my high school education, paving the way for my specialization in Computer Science.",
+            "education.item2.date": "2025", "education.item2.title": "Bachelor of Computer Science",
+            "education.item2.text": "Graduated from Jazan University with a Bachelor's degree in Computer Science, achieving a cumulative GPA of 4.90 out of 5.00, with a focus on web development and data science.",
+            "services.heading": "My <span>Services</span>",
+            "services.card1.title": "Web Development",
+            "services.card1.text": "I offer comprehensive web development solutions, from designing attractive front-end interfaces using HTML, CSS, JavaScript to building robust and efficient back-end systems.",
+            "services.card2.title": "UI/UX Design",
+            "services.card2.text": "Specialized in designing user-friendly User Experience (UX) and visually appealing, intuitive User Interface (UI) to ensure optimal user interaction.",
+            "services.card3.title": "Data Science &amp; Analysis",
+            "services.card3.text": "I transform raw data into valuable and actionable insights, utilizing advanced data analysis tools and techniques to support smart decision-making.",
+            "portfolio.heading": "My <span>Works</span>",
+            "portfolio.item1.title": "A Tale of Coffee",
+            "portfolio.item1.text": "UI/UX design of a modern coffee shop app, created in Figma with a clean and user-friendly interface.",
+            "portfolio.item2.title": "School Management System",
+            "portfolio.item2.text": "Built a school Management System with features for teachers and administration (PHP, SQL, HTML, CSS, JS).",
+            "portfolio.item3.title": "Object Detection Project",
+            "portfolio.item3.text": "Object Detection project using YOLOv8 to identify and localize multiple objects in images.",
+            "portfolio.item4.title": "Interactive Dashboard",
+            "portfolio.item4.text": "Created an interactive data visualization dashboard using Power BI for analyzing and presenting insights.",
+            "portfolio.item5.title": "Personal Portfolio Website",
+            "portfolio.item5.text": "Designed and developed a responsive personal website to showcase projects and achievements (HTML, CSS, JS).",
+            "portfolio.viewProject": "View Project",
+            "whyme.heading": "Why Work <span>With Me</span>",
+            "whyme.card1.title": "Real-World Tested",
+            "whyme.card1.text": "I don't just study systems — I run one daily. Managing Classera and admissions taught me what actually breaks in production, not just in theory.",
+            "whyme.card2.title": "Precision Under Pressure",
+            "whyme.card2.text": "Managing invoices, student records, and parent communication taught me to stay accurate even when the stakes are real.",
+            "whyme.card3.title": "Always Building",
+            "whyme.card3.text": "From a 4.90 GPA to five shipped side projects, I learn by doing — not just by collecting certificates.",
+            "learning.heading": "Currently <span>Learning</span>",
+            "learning.item1": "Going deeper into Azure AI, building on my Fundamentals certification",
+            "learning.item2": "Practicing production-level React and API integration",
+            "learning.item3": "Reading up on prompt engineering and applied LLM workflows",
+            "skills.heading": "My <span>Skills</span>",
+            "skills.technicalHeading": "Technical Skills", "skills.professionalHeading": "Professional Skills",
+            "skills.pro1": "Problem Solving", "skills.pro2": "Data Analysis", "skills.pro3": "Innovation",
+            "skills.pro4": "Communication", "skills.pro5": "Time Management",
+            "contact.heading": "Contact <span>Me</span>",
+            "contact.name": "Full Name", "contact.email": "Email Address", "contact.phone": "Phone Number",
+            "contact.subject": "Subject", "contact.message": "Your Message", "contact.send": "Send Message",
+            "footer.faq": "FAQ", "footer.copyright": "© 2026 Amira. | All Rights Reserved",
+            "langToggle": "🌐 العربية",
+            "copyToast": "Email copied!"
+        },
+        ar: {
+            "nav.home": "الرئيسية", "nav.about": "نبذة عني", "nav.experience": "الخبرات",
+            "nav.education": "التعليم", "nav.services": "الخدمات", "nav.portfolio": "الأعمال",
+            "nav.skills": "المهارات", "nav.contact": "التواصل", "nav.whyme": "لماذا أنا", "nav.learning": "التعلّم المستمر",
+            "hero.greeting": "مرحبًا، أنا <span>أميرة</span>",
+            "hero.imA": "أنا",
+            "hero.openToWork": "متاحة للعمل",
+            "hero.pitch": "خريجة علوم حاسب شغوفة، ومطوّرة مواقع أجمع بين الإبداع والمنطق لبناء حلول تقنية مبتكرة وفعّالة. أدعوكم لاستكشاف أعمالي والتعرف على مسيرتي في عالم التقنية.",
+            "hero.cvBtn": "تحميل السيرة الذاتية", "hero.contactBtn": "التواصل معي",
+            "about.heading": "نبذة <span>عني</span>",
+            "about.text": "أنا <span>أميرة</span>، خريجة علوم الحاسب بامتياز من جامعة جازان، بمعدل تراكمي 4.90 من 5.00. ينبع شغفي من التقاء البرمجة، وتصميم واجهات المستخدم وتجربته (UI/UX)، وعالم علم البيانات العميق. وإلى جانب عملي التقني، أتولى حاليًا إدارة منصة كلاسيرا التعليمية لإحدى المدارس، وعمليات القبول والتسجيل فيها، وهي خبرة تجعلني أقرب إلى حل المشكلات الواقعية والعملية. أؤمن بأن التقنية أداة قوية لابتكار الحلول وتحسين جودة الحياة، وأبحث دائمًا عن فرص لتوظيف مهاراتي في مشروعات ذات أثر حقيقي.",
+            "experience.heading": "الخبرات <span>العملية</span>",
+            "experience.currentBadge": "حاليًا",
+            "experience.item1.date": "مارس 2026 – حتى الآن",
+            "experience.item1.role": "مسؤولة القبول والتسجيل، ومسؤولة إدارة منصة كلاسيرا",
+            "experience.item1.org": "مدرسة بوابة الطفل العالمية · مجموعة أجيال",
+            "experience.item1.b1": "إدارة منصة كلاسيرا التعليمية بشكل كامل: تفعيل حسابات المعلمين والطلاب وأولياء الأمور، وإعداد الجداول الدراسية، وحل المشكلات التقنية فور حدوثها.",
+            "experience.item1.b2": "متابعة إجراءات القبول والتسجيل من استلام أول مستند وحتى إتمام التسجيل، عبر مراجعة الملفات والتحقق من المستندات، مع إبقاء أولياء الأمور على اطلاع بكل خطوة.",
+            "experience.item1.b3": "إصدار ومتابعة فواتير التسجيل والمستحقات المالية، وتنظيم قواعد البيانات لإعداد تقارير مالية وإدارية دقيقة عند الطلب.",
+            "experience.item1.b4": "أتمتة المهام الإدارية المتكررة لتقليل العمل اليدوي وتسريع العمليات اليومية.",
+            "experience.item2.date": "2024", "experience.item2.role": "متدربة",
+            "experience.item2.org": "غرفة جازان التجارية",
+            "experience.item2.b1": "إعداد تقارير إدارية باستخدام برنامج Microsoft Excel لمتابعة المؤشرات ودعم قرارات الإدارة.",
+            "experience.item2.b2": "تنظيم وأرشفة السجلات والمعاملات التجارية والمالية لتسهيل الوصول السريع والدقيق إليها.",
+            "education.heading": "التعليم",
+            "education.item1.date": "2020", "education.item1.title": "الثانوية العامة",
+            "education.item1.text": "أنهيت تعليمي الثانوي بنجاح، مما مهّد الطريق لتخصصي في علوم الحاسب.",
+            "education.item2.date": "2025", "education.item2.title": "بكالوريوس علوم الحاسب",
+            "education.item2.text": "تخرجت من جامعة جازان حاصلة على بكالوريوس علوم الحاسب، بمعدل تراكمي 4.90 من 5.00، مع تركيز على تطوير الويب وعلم البيانات.",
+            "services.heading": "خدماتي",
+            "services.card1.title": "تطوير الويب",
+            "services.card1.text": "أقدّم حلول تطوير ويب متكاملة، من تصميم واجهات أمامية جذابة باستخدام HTML وCSS وJavaScript، إلى بناء أنظمة خلفية قوية وفعّالة.",
+            "services.card2.title": "تصميم UI/UX",
+            "services.card2.text": "متخصصة في تصميم تجربة مستخدم سلسة وواجهات مستخدم جذابة وبديهية، لضمان أفضل تفاعل ممكن.",
+            "services.card3.title": "علم البيانات والتحليل",
+            "services.card3.text": "أحوّل البيانات الخام إلى رؤى قيّمة وقابلة للتنفيذ، باستخدام أدوات وتقنيات تحليل بيانات متقدمة لدعم اتخاذ القرارات الذكية.",
+            "portfolio.heading": "أعمالي",
+            "portfolio.item1.title": "حكاية قهوة",
+            "portfolio.item1.text": "تصميم واجهة وتجربة مستخدم لتطبيق مقهى حديث، أُنجز باستخدام Figma بواجهة نظيفة وسهلة الاستخدام.",
+            "portfolio.item2.title": "نظام إدارة مدرسة",
+            "portfolio.item2.text": "بناء نظام إدارة مدرسة بميزات مخصصة للمعلمين والإداريين (PHP, SQL, HTML, CSS, JS).",
+            "portfolio.item3.title": "مشروع كشف الأجسام",
+            "portfolio.item3.text": "مشروع لكشف الأجسام باستخدام YOLOv8، لتحديد وتموضع عدة أجسام داخل الصور.",
+            "portfolio.item4.title": "لوحة بيانات تفاعلية",
+            "portfolio.item4.text": "لوحة تفاعلية لتحليل وعرض البيانات باستخدام Power BI، لتقديم رؤى واضحة.",
+            "portfolio.item5.title": "الموقع الشخصي",
+            "portfolio.item5.text": "تصميم وتطوير موقع شخصي متجاوب لعرض المشروعات والإنجازات (HTML, CSS, JS).",
+            "portfolio.viewProject": "عرض المشروع",
+            "whyme.heading": "لماذا <span>العمل معي</span>",
+            "whyme.card1.title": "خبرة مُختبرة على أرض الواقع",
+            "whyme.card1.text": "لا أكتفي بدراسة الأنظمة، بل أتولى إدارة أحدها يوميًا. فعملي في إدارة منصة كلاسيرا وعمليات القبول والتسجيل يمنحني فهمًا حقيقيًا لمواطن الخلل الفعلية في الأنظمة، لا في الجانب النظري فقط.",
+            "whyme.card2.title": "الدقة تحت الضغط",
+            "whyme.card2.text": "علّمتني إدارة الفواتير وسجلات الطلاب والتواصل مع أولياء الأمور أن أعمل بدقة عالية، حتى في المواقف التي تنطوي على مخاطر حقيقية.",
+            "whyme.card3.title": "التطوّر المستمر",
+            "whyme.card3.text": "من معدل تراكمي 4.90 إلى خمسة مشروعات فعلية منجزة، أتعلّم من خلال التطبيق العملي لا من خلال جمع الشهادات فقط.",
+            "learning.heading": "أتعلّم <span>حاليًا</span>",
+            "learning.item1": "التعمّق أكثر في Azure AI، انطلاقًا من شهادة Fundamentals التي حصلت عليها",
+            "learning.item2": "التدرّب على React بمستوى إنتاجي، والتعامل مع واجهات البرمجة (APIs)",
+            "learning.item3": "الاطّلاع على هندسة الأوامر (Prompt Engineering) وتطبيقات نماذج اللغة الكبيرة",
+            "skills.heading": "مهاراتي",
+            "skills.technicalHeading": "المهارات التقنية", "skills.professionalHeading": "المهارات الشخصية",
+            "skills.pro1": "حل المشكلات", "skills.pro2": "تحليل البيانات", "skills.pro3": "الابتكار",
+            "skills.pro4": "التواصل", "skills.pro5": "إدارة الوقت",
+            "contact.heading": "التواصل <span>معي</span>",
+            "contact.name": "الاسم الكامل", "contact.email": "البريد الإلكتروني", "contact.phone": "رقم الهاتف",
+            "contact.subject": "الموضوع", "contact.message": "رسالتك", "contact.send": "إرسال الرسالة",
+            "footer.faq": "الأسئلة الشائعة", "footer.copyright": "© 2026 أميرة. جميع الحقوق محفوظة",
+            "langToggle": "🌐 English",
+            "copyToast": "تم نسخ البريد الإلكتروني!"
+        }
+    };
+
+    const professionsByLang = {
+        en: ["Web Developer", "UI/UX Designer", "Data Analyst"],
+        ar: ["مطورة ويب", "مصممة UI/UX", "محللة بيانات"]
+    };
+
+    let currentLang = 'en';
+    let typingTimeoutId = null;
+
+    function applyLanguage(lang) {
+        currentLang = lang;
+        const dict = translations[lang];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (dict[key] !== undefined) el.innerHTML = dict[key];
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+        });
+        document.querySelectorAll('[data-i18n-value]').forEach(el => {
+            const key = el.getAttribute('data-i18n-value');
+            if (dict[key] !== undefined) el.setAttribute('value', dict[key]);
+        });
+
+        const langBtn = document.getElementById('langToggle');
+        if (langBtn) langBtn.textContent = dict['langToggle'];
+
+        const cvBtn = document.getElementById('cvDownloadBtn');
+        if (cvBtn) {
+            cvBtn.setAttribute('href', lang === 'ar' ? 'Amira-Alattas-CV-Arabic.pdf' : 'Amira-Alattas-CV-English.pdf');
+        }
+
+        try { localStorage.setItem('amira-site-lang', lang); } catch (e) {}
+
+        restartTyping();
+    }
+
+    function restartTyping() {
+        const targetEl = document.getElementById('typeTarget');
+        if (!targetEl) return;
+        if (typingTimeoutId) clearTimeout(typingTimeoutId);
+
+        const professions = professionsByLang[currentLang];
+        let professionIndex = 0, charIndex = 0, isDeleting = false;
+
+        function tick() {
+            const word = professions[professionIndex];
+            targetEl.textContent = word.substring(0, charIndex);
+
+            if (!isDeleting && charIndex < word.length) {
+                charIndex++;
+                typingTimeoutId = setTimeout(tick, 100);
+            } else if (isDeleting && charIndex > 0) {
+                charIndex--;
+                typingTimeoutId = setTimeout(tick, 50);
+            } else {
+                isDeleting = !isDeleting;
+                if (!isDeleting) professionIndex = (professionIndex + 1) % professions.length;
+                typingTimeoutId = setTimeout(tick, 1000);
+            }
+        }
+        tick();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let initialLang = 'en';
+        try {
+            const saved = localStorage.getItem('amira-site-lang');
+            if (saved === 'ar' || saved === 'en') initialLang = saved;
+        } catch (e) {}
+
+        applyLanguage(initialLang);
+
+        const langToggleBtn = document.getElementById('langToggle');
+        if (langToggleBtn) {
+            langToggleBtn.addEventListener('click', () => {
+                applyLanguage(currentLang === 'en' ? 'ar' : 'en');
+            });
+        }
+
+        /* ============================
+           SECTION REVEAL ON SCROLL
+           ============================ */
+        const revealIO = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    revealIO.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.section-reveal').forEach(el => revealIO.observe(el));
+
+        /* ============================
+           TILT EFFECT ON CARDS
+           ============================ */
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        const isTouch = window.matchMedia('(hover: none)').matches;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!isTouch && !reduceMotion) {
+            tiltCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const rotateX = ((y / rect.height) - 0.5) * -8;
+                    const rotateY = ((x / rect.width) - 0.5) * 8;
+                    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
+        }
+
+        /* ============================
+           HERO PARTICLE BACKGROUND
+           ============================ */
+        const particleHost = document.getElementById('hero-particles');
+        if (particleHost && !reduceMotion) {
+            const canvas = document.createElement('canvas');
+            particleHost.appendChild(canvas);
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            const homeSection = document.querySelector('.home');
+
+            function resize() {
+                canvas.width = homeSection.offsetWidth;
+                canvas.height = homeSection.offsetHeight;
+            }
+            function initParticles() {
+                const count = Math.min(60, Math.floor((canvas.width * canvas.height) / 22000));
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.3,
+                    vy: (Math.random() - 0.5) * 0.3,
+                    r: Math.random() * 1.6 + 0.6
+                }));
+            }
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => {
+                    p.x += p.vx; p.y += p.vy;
+                    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+                });
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 130) {
+                            ctx.strokeStyle = `rgba(138, 65, 245, ${0.15 * (1 - dist / 130)})`;
+                            ctx.lineWidth = 1;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                particles.forEach(p => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(180, 132, 247, 0.6)';
+                    ctx.fill();
+                });
+                requestAnimationFrame(draw);
+            }
+
+            resize();
+            initParticles();
+            draw();
+            window.addEventListener('resize', () => { resize(); initParticles(); });
+        }
+
+        /* ============================
+           SCROLL PROGRESS BAR + BACK TO TOP
+           ============================ */
+        const progressBar = document.getElementById('scrollProgress');
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            if (progressBar) progressBar.style.width = pct + '%';
+            if (backToTopBtn) backToTopBtn.classList.toggle('visible', scrollTop > 500);
+        });
+
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        /* ============================
+           COPY EMAIL TO CLIPBOARD
+           ============================ */
+        const copyEmailBtn = document.getElementById('copyEmailBtn');
+        const copyToast = document.getElementById('copyToast');
+        if (copyEmailBtn) {
+            copyEmailBtn.addEventListener('click', async () => {
+                const email = 'amira.alattas21@gmail.com';
+                try {
+                    await navigator.clipboard.writeText(email);
+                } catch (e) {
+                    const temp = document.createElement('textarea');
+                    temp.value = email;
+                    document.body.appendChild(temp);
+                    temp.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(temp);
+                }
+                if (copyToast) {
+                    copyToast.classList.add('show');
+                    setTimeout(() => copyToast.classList.remove('show'), 2000);
+                }
+            });
+        }
+    });
+    </script>
+
+    <script>
+    /* ============================
+       OFFLINE SUPPORT (basic PWA)
+       Registers sw.js so the site keeps working without internet
+       after the first visit. sw.js must sit next to this file.
+       ============================ */
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js').catch(() => {
+                /* Fails silently if sw.js isn't uploaded yet or on unsupported hosts */
+            });
+        });
+    }
+    </script>
+</body>
+</html>

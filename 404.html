@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — Amira Alattas</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%238A41F5'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0D0D0F;
+            --secondary-bg-color: #1A1A1D;
+            --text-color: #E0E0E0;
+            --light-text-color: #B0B0B0;
+            --accent-color: #8A41F5;
+            --accent-dark: #6C2ED9;
+            --accent-light: #B484F7;
+            --box-shadow-color: rgba(138, 65, 245, 0.3);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 62.5%; }
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .wrap { max-width: 60rem; }
+        .code {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(7rem, 18vw, 12rem);
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 1.7rem;
+            color: var(--light-text-color);
+            line-height: 1.7;
+            margin-bottom: 3.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1.4rem 3.5rem;
+            background: linear-gradient(45deg, var(--accent-color), var(--accent-dark));
+            border-radius: 4rem;
+            box-shadow: 0 0.8rem 2rem var(--box-shadow-color);
+            font-size: 1.6rem;
+            color: var(--bg-color);
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-0.3rem) scale(1.02);
+            box-shadow: 0 1.2rem 2.5rem var(--box-shadow-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="code">404</div>
+        <h1>This page wandered off.</h1>
+        <p>The page you're looking for doesn't exist — it may have been moved or the link might be off. Let's get you back to the good stuff.</p>
+        <a class="btn" href="/My-profolio/">← Back to Amira's Portfolio</a>
+    </div>
+</body>
+</html>
